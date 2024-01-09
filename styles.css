@@ -4,33 +4,42 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
+.topnav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;  /* Center items horizontally */
+  align-items: center;      /* Center items vertically */
+  overflow: hidden;
+  background-color: #e9e9e9;
+  padding: 10px 0;          /* Add some padding for better spacing */
 }
 
-.logo {
-  font-size: 24px;
-  margin-left: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
 }
 
 .products {
@@ -62,4 +71,11 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
 }
